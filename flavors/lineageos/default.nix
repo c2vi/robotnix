@@ -109,6 +109,11 @@ in mkIf (config.flavor == "lineageos")
       ] ++ lib.optionals (lib.versionAtLeast (toString config.androidVersion) "13") [
         ./dont-run-repo-during-build.patch
       ];
+
+      "system/core".patches = [
+        ./ramdisk_adb_debug_prop_permission_change.patch
+      ];
+
       "system/extras".patches = [
         # pkgutil.get_data() not working, probably because we don't use their compiled python
         (pkgs.fetchpatch {
