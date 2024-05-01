@@ -1,0 +1,24 @@
+diff --git a/darwin-arm64/lib/fontconfig.properties b/darwin-arm64/lib/fontconfig.properties
+new file mode 100644
+index 0000000..97de817
+--- /dev/null
++++ b/darwin-arm64/lib/fontconfig.properties
+@@ -0,0 +1,2 @@
++version=1
++sequence.allfonts=default
+diff --git a/darwin-x86/lib/fontconfig.properties b/darwin-x86/lib/fontconfig.properties
+new file mode 100644
+index 0000000..97de817
+--- /dev/null
++++ b/darwin-x86/lib/fontconfig.properties
+@@ -0,0 +1,2 @@
++version=1
++sequence.allfonts=default
+diff --git a/linux-x86/lib/fontconfig.properties b/linux-x86/lib/fontconfig.properties
+new file mode 100644
+index 0000000..97de817
+--- /dev/null
++++ b/linux-x86/lib/fontconfig.properties
+@@ -0,0 +1,2 @@
++version=1
++sequence.allfonts=default
