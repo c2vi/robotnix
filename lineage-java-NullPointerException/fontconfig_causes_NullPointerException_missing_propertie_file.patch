@@ -1,0 +1,8 @@
+diff --git a/prebuilts/jdk/jdk11/linux-x86/lib/fontconfig.properties b/prebuilts/jdk/jdk11/linux-x86/lib/fontconfig.properties
+new file mode 100644
+index 0000000..97de817
+--- /dev/null
++++ b/prebuilts/jdk/jdk11/linux-x86/lib/fontconfig.properties
+@@ -0,0 +1,2 @@
++version=1
++sequence.allfonts=default

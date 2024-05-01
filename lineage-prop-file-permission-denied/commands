@@ -1,0 +1,10 @@
+/bin/bash -c "
+
+rm -f out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+mkdir -p out/target/product/FP4/test_harness_ramdisk/
+cp out/target/product/FP4/debug_ramdisk/adb_debug.prop out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+echo \"\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+echo \"#\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+echo \"# ADDITIONAL TEST HARNESS PROPERTIES\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+echo \"#\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop
+echo \"ro.audio.silent=1\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop;  echo \"ro.test_harness=1\" >> out/target/product/FP4/test_harness_ramdisk/adb_debug.prop

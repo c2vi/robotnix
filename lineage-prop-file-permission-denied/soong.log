@@ -1,0 +1,229 @@
+2024/05/01 01:50:42.843880 build/soong/cmd/soong_ui/main.go:204: Detected 189 GB total RAM
+2024/05/01 01:50:42.843985 build/soong/cmd/soong_ui/main.go:205: Parallelism (local/remote/highmem): 42/0/23
+2024/05/01 01:50:42.844012 build/soong/cmd/soong_ui/main.go:619: Current file limits: 1024 soft, 524288 hard
+2024/05/01 01:50:42.844074 build/soong/cmd/soong_ui/main.go:232: Took 4411ms to start up.
+2024/05/01 01:50:43.202116 build/soong/ui/build/build.go:189: Starting build with args: []
+2024/05/01 01:50:43.202207 build/soong/ui/build/build.go:190: Environment: [SHELL=/bin/bash ORIGINAL_PWD=/root/sebi/robotnix/five-phone-build ANDROID_PYTHONPATH=/root/sebi/robotnix/five-phone-build/development/python-packages: rootDir=/root/sebi/robotnix/five-phone-build SAVED_UID=0 BUILD_ENV_SEQUENCE_NUMBER=13 ANDROID_SOONG_HOST_OUT=/root/sebi/robotnix/five-phone-build/out/host/linux-x86 TERM_PROGRAM_VERSION=3.3a NIXPKGS_ALLOW_UNFREE=1 TMUX=/tmp/tmux-0/default,314,0 PKG_CONFIG_PATH=/usr/lib/pkgconfig hpm=ssh://hpm x86_64-linux,aarch64-linux - 8 5 big-parallel - - nup=nixpkgs/2a34566b67bef34c551f204063faeecc444ae9da nl=--log-format bar-with-logs ANDROID_BUILD_PATHS=/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/root/sebi/robotnix/five-phone-build/development/scripts:/root/sebi/robotnix/five-phone-build/prebuilts/devtools/tools:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/dtc:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/libufdt:/root/sebi/robotnix/five-phone-build/prebuilts/clang/host/linux-x86/llvm-binutils-stable:/root/sebi/robotnix/five-phone-build/prebuilts/android-emulator/linux-x86_64:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/acloud/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/aidegen/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/atest/linux-x86: PWD=/root/sebi/robotnix/five-phone-build NIX_PROFILES=/nix/var/nix/profiles/default /root/.nix-profile RELEASE_TYPE=EXPERIMENTAL LOGNAME=root XDG_SESSION_TYPE=tty NIX_PATH=:nixpkgs=/nix/store/rnzdrci6fjfmj5y36y4z8m4yg5zhgzxp-source BUILD_NUMBER=2023100409 XAUTHORITY=/root/.Xauthority system=x86_64-linux nip=nixpkgs/71db8c7a02f3be7cb49b495786050ce1913246d3 TARGET_GCC_VERSION=4.9 MOTD_SHOWN=pam HOME=/root NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt SSH_CONNECTION=10.5.2.2 49598 10.5.5.56 22 LINEAGE_BUILD=FP4 TARGET_BUILD_APPS= LESSCLOSE=/usr/bin/lesspipe %s %s XDG_SESSION_CLASS=user TARGET_BUILD_TYPE=release PYTHONPATH=/root/sebi/robotnix/five-phone-build/development/python-packages: TERM=xterm-color ACLOCAL_PATH=/usr/share/aclocal LESSOPEN=| /usr/bin/lesspipe %s USER=root TMUX_PANE=%4 TZDIR=/etc/zoneinfo TOP=/root/sebi/robotnix/five-phone-build NIX_CFLAGS_LINK=-L/usr/lib -L/usr/lib32 TRACE_BEGIN_SOONG=1714528238432605992 SHLVL=6 SAVED_GID=0 NIX_CFLAGS_COMPILE=-idirafter /usr/include OVERRIDE_TARGET_FLATTEN_APEX=true ALLOW_NINJA_ENV=true XDG_SESSION_ID=4977 LOCALE_ARCHIVE=/usr/lib/locale/locale-archive DISPLAY_BUILD_NUMBER=true LD_LIBRARY_PATH=/run/opengl-driver/lib:/run/opengl-driver-32/lib:/usr/lib:/usr/lib32 BUILD_DATETIME=1696411965 XDG_RUNTIME_DIR=/run/user/0 SSH_CLIENT=10.5.2.2 42766 22 GCC_COLORS=error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01 XDG_DATA_DIRS=/usr/local/share:/usr/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share TARGET_PRODUCT=lineage_FP4 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1 SSH_TTY=/dev/pts/3 TARGET_BUILD_VARIANT=userdebug OUT=/root/sebi/robotnix/five-phone-build/out/target/product/FP4 OLDPWD=/root/sebi/robotnix/five-phone-build NIX_LDFLAGS=-L/usr/lib -L/usr/lib32 acern=ssh://acern x86_64-linux,aarch64-linux - 20 10 big-parallel - - TERM_PROGRAM=tmux OUT_DIR=out PYTHONDONTWRITEBYTECODE=1 TMPDIR=/root/sebi/robotnix/five-phone-build/out/soong/.temp ASAN_SYMBOLIZER_PATH=/root/sebi/robotnix/five-phone-build/prebuilts/clang/host/linux-x86/llvm-binutils-stable/llvm-symbolizer LC_MESSAGES=C LANG=C.UTF-8 JAVA_HOME=/root/sebi/robotnix/five-phone-build/prebuilts/jdk/jdk11/linux-x86 ANDROID_JAVA_HOME=prebuilts/jdk/jdk11/linux-x86 ANDROID_JAVA8_HOME=prebuilts/jdk/jdk8/linux-x86 ANDROID_JAVA9_HOME=prebuilts/jdk/jdk9/linux-x86 ANDROID_JAVA11_HOME=prebuilts/jdk/jdk11/linux-x86 PATH=/root/sebi/robotnix/five-phone-build/prebuilts/jdk/jdk11/linux-x86/bin:/root/sebi/robotnix/five-phone-build/prebuilts/jdk/jdk11/linux-x86/bin:/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/root/sebi/robotnix/five-phone-build/development/scripts:/root/sebi/robotnix/five-phone-build/prebuilts/devtools/tools:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/dtc:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/libufdt:/root/sebi/robotnix/five-phone-build/prebuilts/clang/host/linux-x86/llvm-binutils-stable:/root/sebi/robotnix/five-phone-build/prebuilts/android-emulator/linux-x86_64:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/acloud/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/aidegen/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/atest/linux-x86:/run/wrappers/bin:/usr/bin:/usr/sbin:/nix/store/rnzdrci6fjfmj5y36y4z8m4yg5zhgzxp-source/mybin:/root/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/root/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin BUILD_DATETIME_FILE=out/build_date.txt]
+2024/05/01 01:50:43.202430 build/soong/ui/build/build.go:166: Total RAM: 189GB
+2024/05/01 01:50:43.816297 build/soong/ui/build/sandbox_linux.go:123: [prebuilts/build-tools/linux-x86/bin/nsjail -H android-build -e -u nobody -g nogroup -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -- /bin/bash -c if [ $(hostname) == "android-build" ]; then echo "Android" "Success"; else echo Failure; fi]
+2024/05/01 01:50:43.924497 build/soong/ui/build/exec.go:64: "dumpvars" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ckati -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- -f build/make/core/config.mk --color_warnings --kati_stats dump-many-vars MAKECMDGOALS=]
+2024/05/01 01:50:46.656449 build/soong/ui/build/exec.go:74: "dumpvars" finished with exit code 0 (2.732s real, 1.264s user, 419ms system, 316MB maxrss)
+2024/05/01 01:50:46.656545 build/soong/ui/build/dumpvars.go:123: NINJA_GOALS droid
+2024/05/01 01:50:46.656565 build/soong/ui/build/dumpvars.go:123: KATI_GOALS 
+2024/05/01 01:50:46.656577 build/soong/ui/build/dumpvars.go:123: TARGET_DEVICE FP4
+2024/05/01 01:50:46.656592 build/soong/ui/build/dumpvars.go:123: TARGET_DEVICE_DIR device/fairphone/FP4
+2024/05/01 01:50:46.656605 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_DUP_RULES 
+2024/05/01 01:50:46.656618 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_NETWORK 
+2024/05/01 01:50:46.656629 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_NINJA_USES_ENV_VARS 
+2024/05/01 01:50:46.656641 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_SRC_DIR_IS_WRITABLE 
+2024/05/01 01:50:46.656653 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST 
+2024/05/01 01:50:46.656664 build/soong/ui/build/dumpvars.go:123: BOARD_VNDK_VERSION current
+2024/05/01 01:50:46.656675 build/soong/ui/build/dumpvars.go:123: DEFAULT_WARNING_BUILD_MODULE_TYPES 
+2024/05/01 01:50:46.656710 build/soong/ui/build/dumpvars.go:123: DEFAULT_ERROR_BUILD_MODULE_TYPES BUILD_COPY_HEADERS BUILD_HOST_EXECUTABLE BUILD_HOST_SHARED_LIBRARY BUILD_HOST_STATIC_LIBRARY
+2024/05/01 01:50:46.656724 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_PREBUILT_ELF_FILES 
+2024/05/01 01:50:46.656735 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW 
+2024/05/01 01:50:46.656748 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_COPY_HEADERS 
+2024/05/01 01:50:46.656759 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_EXECUTABLE 
+2024/05/01 01:50:46.656770 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_FUZZ_TEST 
+2024/05/01 01:50:46.656781 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HEADER_LIBRARY 
+2024/05/01 01:50:46.656793 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_DALVIK_JAVA_LIBRARY 
+2024/05/01 01:50:46.656805 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_DALVIK_STATIC_JAVA_LIBRARY 
+2024/05/01 01:50:46.656818 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE 
+2024/05/01 01:50:46.656830 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_JAVA_LIBRARY 
+2024/05/01 01:50:46.656841 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_PREBUILT 
+2024/05/01 01:50:46.656853 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_SHARED_LIBRARY 
+2024/05/01 01:50:46.656864 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_HOST_STATIC_LIBRARY 
+2024/05/01 01:50:46.656875 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_JAVA_LIBRARY 
+2024/05/01 01:50:46.656887 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_MULTI_PREBUILT 
+2024/05/01 01:50:46.656898 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_NATIVE_TEST 
+2024/05/01 01:50:46.656909 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_NOTICE_FILE 
+2024/05/01 01:50:46.656920 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_PACKAGE 
+2024/05/01 01:50:46.656932 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_PHONY_PACKAGE 
+2024/05/01 01:50:46.656943 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_PREBUILT 
+2024/05/01 01:50:46.656953 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_RRO_PACKAGE 
+2024/05/01 01:50:46.656965 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_SHARED_LIBRARY 
+2024/05/01 01:50:46.656976 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_STATIC_JAVA_LIBRARY 
+2024/05/01 01:50:46.656987 build/soong/ui/build/dumpvars.go:123: BUILD_BROKEN_USES_BUILD_STATIC_LIBRARY 
+2024/05/01 01:50:46.656999 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT lineage_FP4
+2024/05/01 01:50:46.657010 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2024/05/01 01:50:46.657021 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_APPS 
+2024/05/01 01:50:46.657033 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_UNBUNDLED 
+2024/05/01 01:50:46.657044 build/soong/ui/build/dumpvars.go:123: CC_WRAPPER 
+2024/05/01 01:50:46.657055 build/soong/ui/build/dumpvars.go:123: CXX_WRAPPER 
+2024/05/01 01:50:46.657066 build/soong/ui/build/dumpvars.go:123: RBE_WRAPPER 
+2024/05/01 01:50:46.657077 build/soong/ui/build/dumpvars.go:123: JAVAC_WRAPPER 
+2024/05/01 01:50:46.657089 build/soong/ui/build/dumpvars.go:123: R8_WRAPPER 
+2024/05/01 01:50:46.657100 build/soong/ui/build/dumpvars.go:123: D8_WRAPPER 
+2024/05/01 01:50:46.657111 build/soong/ui/build/dumpvars.go:123: CCACHE_COMPILERCHECK 
+2024/05/01 01:50:46.657124 build/soong/ui/build/dumpvars.go:123: CCACHE_SLOPPINESS 
+2024/05/01 01:50:46.657136 build/soong/ui/build/dumpvars.go:123: CCACHE_BASEDIR 
+2024/05/01 01:50:46.657149 build/soong/ui/build/dumpvars.go:123: CCACHE_CPP2 
+2024/05/01 01:50:46.657160 build/soong/ui/build/dumpvars.go:123: TOOLCHAIN_RUSAGE_OUTPUT 
+2024/05/01 01:50:46.657171 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION_CODENAME REL
+2024/05/01 01:50:46.657194 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION 13
+2024/05/01 01:50:46.657208 build/soong/ui/build/dumpvars.go:123: LINEAGE_VERSION 20.0-20240501-EXPERIMENTAL-FP4
+2024/05/01 01:50:46.657220 build/soong/ui/build/dumpvars.go:123: PRODUCT_INCLUDE_TAGS 
+2024/05/01 01:50:46.657233 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT lineage_FP4
+2024/05/01 01:50:46.657245 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2024/05/01 01:50:46.657257 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_TYPE release
+2024/05/01 01:50:46.657268 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_APPS 
+2024/05/01 01:50:46.657279 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_UNBUNDLED 
+2024/05/01 01:50:46.657291 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH arm64
+2024/05/01 01:50:46.657303 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH_VARIANT armv8-a
+2024/05/01 01:50:46.657316 build/soong/ui/build/dumpvars.go:123: TARGET_CPU_VARIANT cortex-a76
+2024/05/01 01:50:46.657328 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH arm
+2024/05/01 01:50:46.657339 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH_VARIANT armv8-a
+2024/05/01 01:50:46.657350 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_CPU_VARIANT cortex-a76
+2024/05/01 01:50:46.657361 build/soong/ui/build/dumpvars.go:123: HOST_ARCH x86_64
+2024/05/01 01:50:46.657373 build/soong/ui/build/dumpvars.go:123: HOST_2ND_ARCH x86
+2024/05/01 01:50:46.657386 build/soong/ui/build/dumpvars.go:123: HOST_OS linux
+2024/05/01 01:50:46.657398 build/soong/ui/build/dumpvars.go:123: HOST_OS_EXTRA Linux-6.5.11-7-pve-x86_64-Debian-GNU/Linux-12-(bookworm)
+2024/05/01 01:50:46.657410 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_OS windows
+2024/05/01 01:50:46.657421 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_ARCH x86
+2024/05/01 01:50:46.657433 build/soong/ui/build/dumpvars.go:123: HOST_CROSS_2ND_ARCH x86_64
+2024/05/01 01:50:46.657444 build/soong/ui/build/dumpvars.go:123: HOST_BUILD_TYPE release
+2024/05/01 01:50:46.657456 build/soong/ui/build/dumpvars.go:123: BUILD_ID TQ3A.230901.001
+2024/05/01 01:50:46.657468 build/soong/ui/build/dumpvars.go:123: OUT_DIR out
+2024/05/01 01:50:46.657479 build/soong/ui/build/dumpvars.go:123: AUX_OS_VARIANT_LIST 
+2024/05/01 01:50:46.657495 build/soong/ui/build/dumpvars.go:123: PRODUCT_SOONG_NAMESPACES vendor/fairphone/FP4 device/fairphone/FP4 vendor/qcom/opensource/usb/etc hardware/qcom-caf/sm8250 vendor/qcom/opensource/commonsys/display vendor/qcom/opensource/commonsys-intf/display vendor/qcom/opensource/display vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um vendor/qcom/opensource/dataservices
+2024/05/01 01:50:46.657508 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_PREFER 
+2024/05/01 01:50:46.657521 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_TARGET_BUILD_RELEASE 
+2024/05/01 01:50:46.657534 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_USE_SOURCE_CONFIG_VAR 
+2024/05/01 01:50:46.657546 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_VERSION 
+2024/05/01 01:50:46.657557 build/soong/ui/build/dumpvars.go:123: PRODUCT_IS_ATV 
+2024/05/01 01:50:46.657570 build/soong/ui/build/dumpvars.go:123: PRODUCT_IS_AUTO 
+2024/05/01 01:50:46.657583 build/soong/ui/build/dumpvars.go:123: WITH_SU 
+2024/05/01 01:50:46.657594 build/soong/ui/build/dumpvars.go:123: WITH_GMS 
+2024/05/01 01:50:46.657605 build/soong/ui/build/dumpvars.go:123: GMS_MAKEFILE 
+2024/05/01 01:50:46.657618 build/soong/ui/build/dumpvars.go:123: MAINLINE_MODULES_MAKEFILE 
+2024/05/01 01:50:47.572874 build/soong/ui/build/exec.go:64: "soong bootstrap" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ninja -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- -d keepdepfile -d stats -o usesphonyoutputs=yes -o preremoveoutputs=yes -w dupbuild=err -w outputdir=err -w missingoutfile=err -j 42 --frontend_file out/.ninja_fifo -f out/soong/bootstrap.ninja out/soong/build.ninja]
+2024/05/01 01:55:53.421734 build/soong/ui/build/exec.go:74: "soong bootstrap" finished with exit code 0 (5m5.849s real, 28m43.506s user, 2m55.886s system, 21893MB maxrss)
+2024/05/01 01:55:53.422661 build/soong/ui/build/soong.go:555: soong_build metrics:
+2024/05/01 01:55:53.422687 build/soong/ui/build/soong.go:556:  modules: 50579
+2024/05/01 01:55:53.422704 build/soong/ui/build/soong.go:557:  variants: 120044
+2024/05/01 01:55:53.422719 build/soong/ui/build/soong.go:558:  max heap size: 22037 MB
+2024/05/01 01:55:53.422733 build/soong/ui/build/soong.go:559:  total allocation count: 661694630
+2024/05/01 01:55:53.422747 build/soong/ui/build/soong.go:560:  total allocation size: 60491 MB
+2024/05/01 01:55:53.423101 build/soong/ui/build/exec.go:64: "ckati" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ckati -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- --ninja --ninja_dir=out --ninja_suffix=-lineage_FP4-cleanspec --no_ninja_prelude --use_ninja_phony_output --use_ninja_symlink_outputs --regen --ignore_optional_include=out/%.P --detect_android_echo --color_warnings --gen_all_targets --use_find_emulator --werror_find_emulator --no_builtin_rules --werror_suffix_rules --werror_real_to_phony --top_level_phony --werror_phony_looks_real --werror_writable --kati_stats --werror_implicit_rules --werror_overriding_commands -f build/make/core/cleanbuild.mk SOONG_MAKEVARS_MK=out/soong/make_vars-lineage_FP4.mk TARGET_DEVICE_DIR=device/fairphone/FP4]
+2024/05/01 01:55:55.421781 build/soong/ui/build/exec.go:74: "ckati" finished with exit code 0 (1.999s real, 1.27s user, 415ms system, 375MB maxrss)
+2024/05/01 01:55:55.422187 build/soong/ui/build/exec.go:64: "ckati" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ckati -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- --ninja --ninja_dir=out --ninja_suffix=-lineage_FP4 --no_ninja_prelude --use_ninja_phony_output --use_ninja_symlink_outputs --regen --ignore_optional_include=out/%.P --detect_android_echo --color_warnings --gen_all_targets --use_find_emulator --werror_find_emulator --no_builtin_rules --werror_suffix_rules --werror_real_to_phony --top_level_phony --werror_phony_looks_real --werror_writable --kati_stats --writable out/ --werror_implicit_rules -f build/make/core/main.mk --werror_overriding_commands SOONG_MAKEVARS_MK=out/soong/make_vars-lineage_FP4.mk SOONG_ANDROID_MK=out/soong/Android-lineage_FP4.mk TARGET_DEVICE_DIR=device/fairphone/FP4 KATI_PACKAGE_MK_DIR=out/target/product/FP4/obj/CONFIG/kati_packaging]
+2024/05/01 01:59:47.470908 build/soong/ui/build/exec.go:74: "ckati" finished with exit code 0 (3m52.049s real, 1m56.264s user, 11.637s system, 8186MB maxrss)
+2024/05/01 01:59:47.471846 build/soong/ui/build/exec.go:64: "ckati" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ckati -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- --ninja --ninja_dir=out --ninja_suffix=-lineage_FP4-package --no_ninja_prelude --use_ninja_phony_output --use_ninja_symlink_outputs --regen --ignore_optional_include=out/%.P --detect_android_echo --color_warnings --gen_all_targets --use_find_emulator --werror_find_emulator --no_builtin_rules --werror_suffix_rules --werror_real_to_phony --top_level_phony --werror_phony_looks_real --werror_writable --kati_stats --writable out/dist/ --werror_implicit_rules --werror_overriding_commands -f build/make/packaging/main.mk KATI_PACKAGE_MK_DIR=out/target/product/FP4/obj/CONFIG/kati_packaging]
+2024/05/01 01:59:48.443165 build/soong/ui/build/exec.go:74: "ckati" finished with exit code 0 (971ms real, 94ms user, 81ms system, 375MB maxrss)
+2024/05/01 01:59:48.444684 build/soong/ui/build/ninja.go:112: Allowing all environment variables during ninja; incremental builds may be unsafe.
+2024/05/01 01:59:48.444744 build/soong/ui/build/ninja.go:182: Ninja environment: 
+2024/05/01 01:59:48.444794 build/soong/ui/build/ninja.go:186:   ACLOCAL_PATH=/usr/share/aclocal
+2024/05/01 01:59:48.444812 build/soong/ui/build/ninja.go:186:   ALLOW_NINJA_ENV=true
+2024/05/01 01:59:48.444863 build/soong/ui/build/ninja.go:186:   ANDROID_BUILD_PATHS=/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/out/host/linux-x86/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:/root/sebi/robotnix/five-phone-build/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:/root/sebi/robotnix/five-phone-build/development/scripts:/root/sebi/robotnix/five-phone-build/prebuilts/devtools/tools:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/dtc:/root/sebi/robotnix/five-phone-build/prebuilts/misc/linux-x86/libufdt:/root/sebi/robotnix/five-phone-build/prebuilts/clang/host/linux-x86/llvm-binutils-stable:/root/sebi/robotnix/five-phone-build/prebuilts/android-emulator/linux-x86_64:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/acloud/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/aidegen/linux-x86:/root/sebi/robotnix/five-phone-build/prebuilts/asuite/atest/linux-x86:
+2024/05/01 01:59:48.444881 build/soong/ui/build/ninja.go:186:   ANDROID_JAVA11_HOME=prebuilts/jdk/jdk11/linux-x86
+2024/05/01 01:59:48.444897 build/soong/ui/build/ninja.go:186:   ANDROID_JAVA8_HOME=prebuilts/jdk/jdk8/linux-x86
+2024/05/01 01:59:48.444916 build/soong/ui/build/ninja.go:186:   ANDROID_JAVA9_HOME=prebuilts/jdk/jdk9/linux-x86
+2024/05/01 01:59:48.444932 build/soong/ui/build/ninja.go:186:   ANDROID_JAVA_HOME=prebuilts/jdk/jdk11/linux-x86
+2024/05/01 01:59:48.444947 build/soong/ui/build/ninja.go:186:   ANDROID_PYTHONPATH=/root/sebi/robotnix/five-phone-build/development/python-packages:
+2024/05/01 01:59:48.444962 build/soong/ui/build/ninja.go:186:   ANDROID_SOONG_HOST_OUT=/root/sebi/robotnix/five-phone-build/out/host/linux-x86
+2024/05/01 01:59:48.444980 build/soong/ui/build/ninja.go:186:   ASAN_SYMBOLIZER_PATH=/root/sebi/robotnix/five-phone-build/prebuilts/clang/host/linux-x86/llvm-binutils-stable/llvm-symbolizer
+2024/05/01 01:59:48.444996 build/soong/ui/build/ninja.go:186:   BUILD_DATETIME=1696411965
+2024/05/01 01:59:48.445012 build/soong/ui/build/ninja.go:186:   BUILD_DATETIME_FILE=out/build_date.txt
+2024/05/01 01:59:48.445027 build/soong/ui/build/ninja.go:186:   BUILD_ENV_SEQUENCE_NUMBER=13
+2024/05/01 01:59:48.445042 build/soong/ui/build/ninja.go:186:   BUILD_NUMBER=2023100409
+2024/05/01 01:59:48.445057 build/soong/ui/build/ninja.go:186:   DISPLAY_BUILD_NUMBER=true
+2024/05/01 01:59:48.445072 build/soong/ui/build/ninja.go:186:   DIST_DIR=out/dist
+2024/05/01 01:59:48.445088 build/soong/ui/build/ninja.go:186:   GCC_COLORS=error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01
+2024/05/01 01:59:48.445103 build/soong/ui/build/ninja.go:186:   HOME=/root
+2024/05/01 01:59:48.445118 build/soong/ui/build/ninja.go:186:   JAVA_HOME=/root/sebi/robotnix/five-phone-build/prebuilts/jdk/jdk11/linux-x86
+2024/05/01 01:59:48.445133 build/soong/ui/build/ninja.go:186:   LANG=C.UTF-8
+2024/05/01 01:59:48.445148 build/soong/ui/build/ninja.go:186:   LC_MESSAGES=C
+2024/05/01 01:59:48.445164 build/soong/ui/build/ninja.go:186:   LD_LIBRARY_PATH=/run/opengl-driver/lib:/run/opengl-driver-32/lib:/usr/lib:/usr/lib32
+2024/05/01 01:59:48.445199 build/soong/ui/build/ninja.go:186:   LESSCLOSE=/usr/bin/lesspipe %s %s
+2024/05/01 01:59:48.445216 build/soong/ui/build/ninja.go:186:   LESSOPEN=| /usr/bin/lesspipe %s
+2024/05/01 01:59:48.445231 build/soong/ui/build/ninja.go:186:   LINEAGE_BUILD=FP4
+2024/05/01 01:59:48.445247 build/soong/ui/build/ninja.go:186:   LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+2024/05/01 01:59:48.445262 build/soong/ui/build/ninja.go:186:   LOGNAME=root
+2024/05/01 01:59:48.445277 build/soong/ui/build/ninja.go:186:   MOTD_SHOWN=pam
+2024/05/01 01:59:48.445292 build/soong/ui/build/ninja.go:186:   NIXPKGS_ALLOW_UNFREE=1
+2024/05/01 01:59:48.445308 build/soong/ui/build/ninja.go:186:   NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu=1
+2024/05/01 01:59:48.445323 build/soong/ui/build/ninja.go:186:   NIX_CFLAGS_COMPILE=-idirafter /usr/include
+2024/05/01 01:59:48.445339 build/soong/ui/build/ninja.go:186:   NIX_CFLAGS_LINK=-L/usr/lib -L/usr/lib32
+2024/05/01 01:59:48.445354 build/soong/ui/build/ninja.go:186:   NIX_LDFLAGS=-L/usr/lib -L/usr/lib32
+2024/05/01 01:59:48.445369 build/soong/ui/build/ninja.go:186:   NIX_PATH=:nixpkgs=/nix/store/rnzdrci6fjfmj5y36y4z8m4yg5zhgzxp-source
+2024/05/01 01:59:48.445384 build/soong/ui/build/ninja.go:186:   NIX_PROFILES=/nix/var/nix/profiles/default /root/.nix-profile
+2024/05/01 01:59:48.445399 build/soong/ui/build/ninja.go:186:   NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+2024/05/01 01:59:48.445414 build/soong/ui/build/ninja.go:186:   OLDPWD=/root/sebi/robotnix/five-phone-build
+2024/05/01 01:59:48.445432 build/soong/ui/build/ninja.go:186:   ORIGINAL_PWD=/root/sebi/robotnix/five-phone-build
+2024/05/01 01:59:48.445447 build/soong/ui/build/ninja.go:186:   OUT=/root/sebi/robotnix/five-phone-build/out/target/product/FP4
+2024/05/01 01:59:48.445462 build/soong/ui/build/ninja.go:186:   OUT_DIR=out
+2024/05/01 01:59:48.445478 build/soong/ui/build/ninja.go:186:   OVERRIDE_TARGET_FLATTEN_APEX=true
+2024/05/01 01:59:48.445493 build/soong/ui/build/ninja.go:186:   PATH=/root/sebi/robotnix/five-phone-build/prebuilts/build-tools/path/linux-x86:/root/sebi/robotnix/five-phone-build/out/.path
+2024/05/01 01:59:48.445508 build/soong/ui/build/ninja.go:186:   PKG_CONFIG_PATH=/usr/lib/pkgconfig
+2024/05/01 01:59:48.445522 build/soong/ui/build/ninja.go:186:   PWD=/root/sebi/robotnix/five-phone-build
+2024/05/01 01:59:48.445537 build/soong/ui/build/ninja.go:186:   PYTHONDONTWRITEBYTECODE=1
+2024/05/01 01:59:48.445552 build/soong/ui/build/ninja.go:186:   PYTHONPATH=/root/sebi/robotnix/five-phone-build/development/python-packages:
+2024/05/01 01:59:48.445567 build/soong/ui/build/ninja.go:186:   RELEASE_TYPE=EXPERIMENTAL
+2024/05/01 01:59:48.445581 build/soong/ui/build/ninja.go:186:   SAVED_GID=0
+2024/05/01 01:59:48.445597 build/soong/ui/build/ninja.go:186:   SAVED_UID=0
+2024/05/01 01:59:48.445612 build/soong/ui/build/ninja.go:186:   SHELL=/bin/bash
+2024/05/01 01:59:48.445627 build/soong/ui/build/ninja.go:186:   SHLVL=6
+2024/05/01 01:59:48.445642 build/soong/ui/build/ninja.go:186:   SSH_CLIENT=10.5.2.2 42766 22
+2024/05/01 01:59:48.445657 build/soong/ui/build/ninja.go:186:   SSH_CONNECTION=10.5.2.2 49598 10.5.5.56 22
+2024/05/01 01:59:48.445672 build/soong/ui/build/ninja.go:186:   SSH_TTY=/dev/pts/3
+2024/05/01 01:59:48.445686 build/soong/ui/build/ninja.go:186:   TARGET_BUILD_TYPE=release
+2024/05/01 01:59:48.445701 build/soong/ui/build/ninja.go:186:   TARGET_BUILD_VARIANT=userdebug
+2024/05/01 01:59:48.445717 build/soong/ui/build/ninja.go:186:   TARGET_GCC_VERSION=4.9
+2024/05/01 01:59:48.445731 build/soong/ui/build/ninja.go:186:   TARGET_PRODUCT=lineage_FP4
+2024/05/01 01:59:48.445748 build/soong/ui/build/ninja.go:186:   TERM=xterm-color
+2024/05/01 01:59:48.445763 build/soong/ui/build/ninja.go:186:   TERM_PROGRAM=tmux
+2024/05/01 01:59:48.445778 build/soong/ui/build/ninja.go:186:   TERM_PROGRAM_VERSION=3.3a
+2024/05/01 01:59:48.445793 build/soong/ui/build/ninja.go:186:   TMPDIR=/root/sebi/robotnix/five-phone-build/out/soong/.temp
+2024/05/01 01:59:48.445808 build/soong/ui/build/ninja.go:186:   TMUX=/tmp/tmux-0/default,314,0
+2024/05/01 01:59:48.445835 build/soong/ui/build/ninja.go:186:   TMUX_PANE=%4
+2024/05/01 01:59:48.445853 build/soong/ui/build/ninja.go:186:   TOP=/root/sebi/robotnix/five-phone-build
+2024/05/01 01:59:48.445868 build/soong/ui/build/ninja.go:186:   TRACE_BEGIN_SOONG=1714528238432605992
+2024/05/01 01:59:48.445884 build/soong/ui/build/ninja.go:186:   TZDIR=/etc/zoneinfo
+2024/05/01 01:59:48.445899 build/soong/ui/build/ninja.go:186:   USER=root
+2024/05/01 01:59:48.445914 build/soong/ui/build/ninja.go:186:   XAUTHORITY=/root/.Xauthority
+2024/05/01 01:59:48.445931 build/soong/ui/build/ninja.go:186:   XDG_DATA_DIRS=/usr/local/share:/usr/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share:/root/.nix-profile/share:/nix/var/nix/profiles/default/share
+2024/05/01 01:59:48.445947 build/soong/ui/build/ninja.go:186:   XDG_RUNTIME_DIR=/run/user/0
+2024/05/01 01:59:48.445962 build/soong/ui/build/ninja.go:186:   XDG_SESSION_CLASS=user
+2024/05/01 01:59:48.445976 build/soong/ui/build/ninja.go:186:   XDG_SESSION_ID=4977
+2024/05/01 01:59:48.445991 build/soong/ui/build/ninja.go:186:   XDG_SESSION_TYPE=tty
+2024/05/01 01:59:48.446007 build/soong/ui/build/ninja.go:186:   acern=ssh://acern x86_64-linux,aarch64-linux - 20 10 big-parallel - -
+2024/05/01 01:59:48.446022 build/soong/ui/build/ninja.go:186:   hpm=ssh://hpm x86_64-linux,aarch64-linux - 8 5 big-parallel - -
+2024/05/01 01:59:48.446037 build/soong/ui/build/ninja.go:186:   nip=nixpkgs/71db8c7a02f3be7cb49b495786050ce1913246d3
+2024/05/01 01:59:48.446052 build/soong/ui/build/ninja.go:186:   nl=--log-format bar-with-logs
+2024/05/01 01:59:48.446067 build/soong/ui/build/ninja.go:186:   nup=nixpkgs/2a34566b67bef34c551f204063faeecc444ae9da
+2024/05/01 01:59:48.446082 build/soong/ui/build/ninja.go:186:   rootDir=/root/sebi/robotnix/five-phone-build
+2024/05/01 01:59:48.446097 build/soong/ui/build/ninja.go:186:   system=x86_64-linux
+2024/05/01 01:59:48.446334 build/soong/ui/build/exec.go:64: "ninja" executing "prebuilts/build-tools/linux-x86/bin/nsjail" [-x prebuilts/build-tools/linux-x86/bin/ninja -H android-build --cwd /root/sebi/robotnix/five-phone-build -t 0 -e --proc_rw -u nobody -g nogroup --rlimit_as soft --rlimit_core soft --rlimit_cpu soft --rlimit_fsize soft --rlimit_nofile soft -R / -B /tmp -B /root/sebi/robotnix/five-phone-build -B /root/sebi/robotnix/five-phone-build/out --disable_clone_newcgroup -q -- -d keepdepfile -d keeprsp -d stats --frontend_file out/.ninja_fifo droid -j 42 -f out/combined-lineage_FP4.ninja -o usesphonyoutputs=yes -w dupbuild=err -w missingdepfile=err]
+2024/05/01 02:02:56.489710 build/soong/ui/build/path.go:186: Disallowed PATH tool "yes" used: []string{"yes", ""}
+2024/05/01 02:02:56.489794 build/soong/ui/build/path.go:188: See https://android.googlesource.com/platform/build/+/master/Changes.md#PATH_Tools for more information.
+2024/05/01 02:03:07.989313 build/soong/ui/build/path.go:186: Disallowed PATH tool "yes" used: []string{"yes", ""}
+2024/05/01 02:03:07.989380 build/soong/ui/build/path.go:188: See https://android.googlesource.com/platform/build/+/master/Changes.md#PATH_Tools for more information.
+2024/05/01 02:03:44.721682 build/soong/ui/build/exec.go:74: "ninja" finished with exit code 1 (3m56.275s real, 8m34.481s user, 1m51.162s system, 18313MB maxrss)
+2024/05/01 02:03:44.721863 build/soong/ui/build/exec.go:127: ninja failed with: exit status 1
+2024/05/01 02:03:48.455347 build/soong/ui/status/critical_path.go:111: critical path took 5m4s
+2024/05/01 02:03:48.455415 build/soong/ui/status/critical_path.go:114: elapsed time 13m1s
+2024/05/01 02:03:48.455430 build/soong/ui/status/critical_path.go:116: perfect parallelism ratio 38%
+2024/05/01 02:03:48.455439 build/soong/ui/status/critical_path.go:120: critical path:
+2024/05/01 02:03:48.455449 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-internal-detrand/pkg/google.golang.org/protobuf/internal/detrand.a
+2024/05/01 02:03:48.455457 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-internal-errors/pkg/google.golang.org/protobuf/internal/errors.a
+2024/05/01 02:03:48.455486 build/soong/ui/status/critical_path.go:125:     0:01 compile out/host/linux-x86/bin/go/golang-protobuf-encoding-protowire/pkg/google.golang.org/protobuf/encoding/protowire.a
+2024/05/01 02:03:48.455498 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoreflect/pkg/google.golang.org/protobuf/reflect/protoreflect.a
+2024/05/01 02:03:48.455510 build/soong/ui/status/critical_path.go:125:     0:01 compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-messageset/pkg/google.golang.org/protobuf/internal/encoding/messageset.a
+2024/05/01 02:03:48.455520 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoregistry/pkg/google.golang.org/protobuf/reflect/protoregistry.a
+2024/05/01 02:03:48.455552 build/soong/ui/status/critical_path.go:125:     0:01 compile out/host/linux-x86/bin/go/golang-protobuf-proto/pkg/google.golang.org/protobuf/proto.a
+2024/05/01 02:03:48.455564 build/soong/ui/status/critical_path.go:125:     0:01 compile out/host/linux-x86/bin/go/golang-protobuf-internal-filedesc/pkg/google.golang.org/protobuf/internal/filedesc.a
+2024/05/01 02:03:48.455582 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-tag/pkg/google.golang.org/protobuf/internal/encoding/tag.a
+2024/05/01 02:03:48.455591 build/soong/ui/status/critical_path.go:125:     0:02 compile out/host/linux-x86/bin/go/golang-protobuf-internal-impl/pkg/google.golang.org/protobuf/internal/impl.a
+2024/05/01 02:03:48.455624 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-internal-filetype/pkg/google.golang.org/protobuf/internal/filetype.a
+2024/05/01 02:03:48.455633 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/golang-protobuf-runtime-protoimpl/pkg/google.golang.org/protobuf/runtime/protoimpl.a
+2024/05/01 02:03:48.455644 build/soong/ui/status/critical_path.go:125:     0:00 compile out/host/linux-x86/bin/go/soong-ui-metrics_proto/pkg/android/soong/ui/metrics/metrics_proto.a
+2024/05/01 02:03:48.455655 build/soong/ui/status/critical_path.go:125:     0:08 compile out/host/linux-x86/bin/go/soong-android/pkg/android/soong/android.a
+2024/05/01 02:03:48.455665 build/soong/ui/status/critical_path.go:125:     0:02 compile out/host/linux-x86/bin/go/soong-cc-config/pkg/android/soong/cc/config.a
+2024/05/01 02:03:48.455676 build/soong/ui/status/critical_path.go:125:     0:07 compile out/host/linux-x86/bin/go/soong-cc/pkg/android/soong/cc.a
+2024/05/01 02:03:48.455695 build/soong/ui/status/critical_path.go:125:     0:10 compile out/host/linux-x86/bin/go/soong-java/pkg/android/soong/java.a
+2024/05/01 02:03:48.455714 build/soong/ui/status/critical_path.go:125:     0:03 compile out/host/linux-x86/bin/go/soong-apex/pkg/android/soong/apex.a
+2024/05/01 02:03:48.455733 build/soong/ui/status/critical_path.go:125:     0:01 compile out/host/linux-x86/bin/go/soong-sdk/pkg/android/soong/sdk.a
+2024/05/01 02:03:48.455745 build/soong/ui/status/critical_path.go:125:     0:03 compile out/host/linux-x86/bin/go/soong_build/obj/soong_build.a
+2024/05/01 02:03:48.455756 build/soong/ui/status/critical_path.go:125:     0:01 link out/host/linux-x86/bin/go/soong_build/obj/a.out
+2024/05/01 02:03:48.455775 build/soong/ui/status/critical_path.go:125:     0:00 cp out/host/linux-x86/bin/soong_build
+2024/05/01 02:03:48.455788 build/soong/ui/status/critical_path.go:125:     4:22 analyzing Android.bp files and generating ninja file at out/soong/build.ninja
