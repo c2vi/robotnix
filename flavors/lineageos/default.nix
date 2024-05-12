@@ -109,6 +109,27 @@ in mkIf (config.flavor == "lineageos")
       ] ++ lib.optionals (lib.versionAtLeast (toString config.androidVersion) "13") [
         ./dont-run-repo-during-build.patch
       ];
+
+
+      "system/core".patches = [
+        ./ramdisk_adb_debug_prop_permission_change.patch
+      ];
+
+
+      "prebuilts/jdk/jdk8".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk9".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk11".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk17".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+
+
       "system/extras".patches = [
         # pkgutil.get_data() not working, probably because we don't use their compiled python
         (pkgs.fetchpatch {
