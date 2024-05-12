@@ -7,7 +7,7 @@ let
     optional optionals optionalString optionalAttrs
     elem filter
     mapAttrs mapAttrs' nameValuePair filterAttrs
-    attrNames getAttrs flatten remove
+    attrNames getAttrs hasAttr flatten remove
     mkIf mkMerge mkDefault mkForce
     importJSON toLower hasPrefix removePrefix hasSuffix replaceStrings;
 
@@ -136,9 +136,9 @@ in mkIf (config.flavor == "lineageos")
     filteredRelpaths = remove (attrNames repoDirs) relpaths; # Remove any repos that we're already including from repo json
 
     # In LOS20, each device/ relpath has an associated vendor/ relpath.
-    # Well, usually...
+    # Well, usually... so we also filter to check if the resulting vendor dir exists in vendorDirs
     deviceRelpaths = filter (path: hasPrefix "device/" path) relpaths;
-    vendorifiedRelpaths = map (replaceStrings [ "device/" ] [ "vendor/" ]) deviceRelpaths;
+    vendorifiedRelpaths = filter (path: hasAttr path vendorDirs) (map (replaceStrings [ "device/" ] [ "vendor/" ]) deviceRelpaths);
 
     vendorRelpaths = if config.androidVersion >= 13 then (
       # LOS20 needs vendor/$vendor/$device and all the common dirs but with
