@@ -119,6 +119,16 @@ let
         internal = true;
       };
 
+      # an extra piece of unpackScript, which can for example be used to chmod +w certain files
+      # for example: flavors/lineageos/default.nix (the file system/core/rootdir/adb_debug.prop
+      # which needs to have write permissions because it is copied to target
+      # (with the permissions it has) and then written to.
+      extraUnpackScript = mkOption {
+        default = "";
+        type = types.str;
+        internal = true;
+      };
+
       # These remaining options should be set by json output of mk-vendor-file.py
       url = mkOption {
         type = types.nullOr types.str;
@@ -209,7 +219,8 @@ let
       + (lib.concatMapStringsSep "\n" (c: ''
         mkdir -p $(dirname ${c.dest})
         ln -sf --relative ${config.relpath}/${c.src} ${c.dest}
-      '') config.linkfiles);
+      '') config.linkfiles)
+      + config.extraUnpackScript;
     };
   });
 in
