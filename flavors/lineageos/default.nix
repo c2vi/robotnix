@@ -111,9 +111,7 @@ in mkIf (config.flavor == "lineageos")
       ];
 
 
-      "system/core".patches = [
-        ./ramdisk_adb_debug_prop_permission_change.patch
-      ];
+      "system/core".unpackScript = "chmod +w rootdir/adb_debug.prop";
 
 
       "prebuilts/jdk/jdk8".patches = [
