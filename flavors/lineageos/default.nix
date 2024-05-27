@@ -111,7 +111,7 @@ in mkIf (config.flavor == "lineageos")
       ];
 
 
-      "system/core".extraUnpackScript = "chmod +w rootdir/adb_debug.prop";
+      "system/core".extraUnpackScript = "chmod +w system/core/rootdir/adb_debug.prop";
 
 
       "prebuilts/jdk/jdk8".patches = [
