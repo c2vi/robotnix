@@ -1,0 +1,49 @@
+diff --git a/android/defs.go b/android/defs.go
+index 362b382..b2eba10 100644
+--- a/android/defs.go
++++ b/android/defs.go
+@@ -52,7 +52,7 @@ var (
+ 	// A copy rule.
+ 	Cp = pctx.AndroidStaticRule("Cp",
+ 		blueprint.RuleParams{
+-			Command:     "rm -f $out && cp $cpPreserveSymlinks $cpFlags $in $out$extraCmds",
++			Command:     "rm -f $out && cp $cpPreserveSymlinks $cpFlags $in $out$extraCmds; chmod -R +w $out",
+ 			Description: "cp $out",
+ 		},
+ 		"cpFlags", "extraCmds")
+@@ -60,7 +60,7 @@ var (
+ 	// A copy rule that only updates the output if it changed.
+ 	CpIfChanged = pctx.AndroidStaticRule("CpIfChanged",
+ 		blueprint.RuleParams{
+-			Command:     "if ! cmp -s $in $out; then cp $in $out; fi",
++			Command:     "if ! cmp -s $in $out; then cp $in $out; chmod -R +w $out; fi",
+ 			Description: "cp if changed $out",
+ 			Restat:      true,
+ 		},
+@@ -68,7 +68,7 @@ var (
+ 
+ 	CpExecutable = pctx.AndroidStaticRule("CpExecutable",
+ 		blueprint.RuleParams{
+-			Command:     "rm -f $out && cp $cpPreserveSymlinks $cpFlags $in $out && chmod +x $out$extraCmds",
++			Command:     "rm -f $out && cp $cpPreserveSymlinks $cpFlags $in $out && chmod +x $out$extraCmds; chmod -R +w $out",
+ 			Description: "cp $out",
+ 		},
+ 		"cpFlags", "extraCmds")
+@@ -98,7 +98,7 @@ var (
+ 
+ 	Cat = pctx.AndroidStaticRule("Cat",
+ 		blueprint.RuleParams{
+-			Command:     "cat $in > $out",
++			Command:     "chmod -R +w $out; cat $in > $out",
+ 			Description: "concatenate licenses $out",
+ 		})
+ 
+@@ -107,7 +107,7 @@ var (
+ 	// content to file.
+ 	writeFile = pctx.AndroidStaticRule("writeFile",
+ 		blueprint.RuleParams{
+-			Command:     `/bin/bash -c 'echo -e -n "$$0" > $out' $content`,
++			Command:     `/bin/bash -c 'chmod -R +w $out; echo -e -n "$$0" > $out' $content`,
+ 			Description: "writing file $out",
+ 		},
+ 		"content")

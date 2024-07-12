@@ -118,6 +118,10 @@ in mkIf (config.flavor == "lineageos")
         })
       ];
 
+      "build/soong".patches = [
+        ./soong_copy_add_chmod.patch
+      ];
+
       # LineageOS will sometimes force-push to this repo, and the older revisions are garbage collected.
       # So we'll just build chromium webview ourselves.
       "external/chromium-webview".enable = false;
