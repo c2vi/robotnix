@@ -92,6 +92,20 @@ in mkIf (config.flavor == "lineageos")
     repoDirs
 
     {
+
+      "prebuilts/jdk/jdk8".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk9".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk11".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+      "prebuilts/jdk/jdk17".patches = [
+       ./fontconfig_causes_NullPointerException_missing_propertie_file.patch
+      ];
+
       "vendor/lineage".patches = [
         (if lib.versionAtLeast (toString config.androidVersion) "13"
          then ./0001-Remove-LineageOS-keys-20.patch
